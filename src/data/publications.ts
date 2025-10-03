@@ -17,7 +17,7 @@ export const publications: Publication[] = [
     authors: "Aláez, D., Olaz, X., Prieto, M., Villadangos, J., Astrain, J.J.",
     source: "Simulation Modelling Practice and Theory 123, 102703",
     year: 2023,
-    citations: 41,
+    citations: 52,
     type: "journal"
   },
   {
@@ -26,7 +26,7 @@ export const publications: Publication[] = [
     authors: "Olaz, X., Aláez, D., Prieto, M., Villadangos, J., Astrain, J.J.",
     source: "Expert Systems with Applications 225, 120146",
     year: 2023,
-    citations: 15,
+    citations: 20,
     type: "journal"
   },
   {
@@ -35,7 +35,7 @@ export const publications: Publication[] = [
     authors: "Aláez, D., Olaz, X., Prieto, M., Porcellinis, P., Villadangos, J.",
     source: "Information 13 (12), 585",
     year: 2022,
-    citations: 12,
+    citations: 15,
     type: "journal"
   },
   {
@@ -44,7 +44,7 @@ export const publications: Publication[] = [
     authors: "Aláez, D., Lopez-Iturri, P., Celaya-Echarri, M., Azpilicueta, L., Falcone, F.",
     source: "Computer Networks 242, 110276",
     year: 2024,
-    citations: 6,
+    citations: 7,
     type: "journal"
   },
   {
@@ -53,7 +53,7 @@ export const publications: Publication[] = [
     authors: "Aláez, D., Celaya-Echarri, M., Azpilicueta, L., Villadangos, J.",
     source: "SoftwareX 25, 101628",
     year: 2024,
-    citations: 4,
+    citations: 7,
     type: "journal"
   },
   {
@@ -76,12 +76,12 @@ export const publications: Publication[] = [
   },
   {
     id: 8,
-    title: "Uav Digital Twin Open-Source Framework: Case of Study Remote Sensing in the Andean Mountains",
-    authors: "Valencia, E., Toapanta, F., Oña, G., Carrillo, A., Alaez, D., Loyaga, E.",
-    source: "Available at SSRN 4778454",
-    year: 2022,
+    title: "An Open-source UAV Digital Twin framework: A Case Study on Remote Sensing in the Andean Mountains",
+    authors: "Esteban Valencia, Francisco Toapanta, Gabriel Oña, Andrey Carrillo, Daniel Aláez, Erick Loyaga, William Chamorro, Patricio Cruz, Jackeline Abad, Patrick Vandewalle",
+    source: "Journal of Intelligent & Robotic Systems",
+    year: 2025,
     citations: 1,
-    type: "other"
+    type: "journal"
   },
   {
     id: 9,
@@ -89,6 +89,7 @@ export const publications: Publication[] = [
     authors: "Aláez, D., Prieto, M., Villadangos, J., Astrain, J.J.",
     source: "Applied Sciences 15 (5), 2388",
     year: 2025,
+    citations: 1,
     type: "journal"
   },
   {
@@ -97,6 +98,7 @@ export const publications: Publication[] = [
     authors: "Aláez, D., Prieto, M., Villadangos, J., Astrain, J.J.",
     source: "IEEE Transactions on Industrial Informatics",
     year: 2024,
+    citations: 2,
     type: "journal"
   },
   {

@@ -9,16 +9,14 @@ import PageBackground from '@/components/PageBackground';
 const researchAreas = [
   {
     id: 1,
-    title: 'Digital Twin Technology for VTOL UAVs',
-    description: `Development and implementation of digital twin models for vertical take-off and landing unmanned aerial vehicles. 
-    This research focuses on creating accurate virtual replicas of physical drones to predict behavior, optimize design, and 
-    enhance performance through simulation before physical testing.`,
-    icon: '🤖',
+    title: 'Distributed Systems for Unmanned Aerial Vehicles',
+    description: `Research and development of distributed systems architectures for UAVs, enabling collaborative missions, fault tolerance, and scalable control. This area focuses on networked drones that share data, coordinate tasks, and adapt to dynamic environments for enhanced operational efficiency.`,
+    icon: '🛰️',
     details: [
-      'Real-time data integration from physical drones',
-      'Predictive maintenance algorithms',
-      'Performance optimization through virtual testing',
-      'Integration with machine learning for adaptive model refinement'
+      'Multi-agent coordination and communication protocols',
+      'Fault-tolerant distributed control algorithms',
+      'Scalable mission planning for drone swarms',
+      'Real-time data sharing and adaptive decision-making'
     ]
   },
   {
