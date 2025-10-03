@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
 
-## Project info
+# danielalaez.github.io — Personal Academic Website Template
 
-**URL**: https://lovable.dev/projects/109cd74d-2dda-40f7-be56-94d45bfad746
+This repository contains the template for my personal academic website, hosted on GitHub Pages at [danielalaez.github.io](http://danielalaez.github.io). The template was originally created using Lovable and later exported to this open-source repository for broader academic use and customization.
 
-## How can I edit this code?
+## About This Project
 
-There are several ways of editing your application.
+This template is designed for academic professionals, researchers, and students who want a modern, responsive, and easily customizable personal website. It features sections for research, publications, blog posts, and contact information.
 
-**Use Lovable**
+## Live Website
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/109cd74d-2dda-40f7-be56-94d45bfad746) and start prompting.
+- **URL:** [http://danielalaez.github.io](http://danielalaez.github.io)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Technologies Used
 
-**Use your preferred IDE**
+The project leverages the following technologies and packages:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Vite** — Fast build tool and development server
+- **TypeScript** — Type-safe JavaScript
+- **React** — UI library for building interactive interfaces
+- **shadcn-ui** — Accessible and customizable React UI components
+- **Tailwind CSS** — Utility-first CSS framework for rapid styling
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started: Clone and Local Setup
 
-Follow these steps:
+To use this template for your own academic website, follow these steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone the repository
+git clone https://github.com/danielalaez/danielalaez.github.io.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Navigate to the project directory
+cd danielalaez.github.io
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Deploying to GitHub Pages
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To deploy your site to GitHub Pages:
 
-**Use GitHub Codespaces**
+1. Push your changes to the `main` branch of your GitHub repository.
+2. In your repository settings, enable GitHub Pages and set the source to the `main` branch (or `/docs` folder if you configure output there).
+3. Optionally, use a custom domain by configuring it in the repository settings.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+For more details, see the [GitHub Pages documentation](https://docs.github.com/en/pages/getting-started-with-github-pages).
 
-## What technologies are used for this project?
+## Customization
 
-This project is built with:
+- Update content in the `src/pages` and `src/components` folders to personalize your site.
+- Add publications, blog posts, and research areas in the respective data files.
+- Style and extend UI components as needed using Tailwind CSS and shadcn-ui.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## License
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/109cd74d-2dda-40f7-be56-94d45bfad746) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This template is open-source and free to use for academic and personal purposes.
