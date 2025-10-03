@@ -65,7 +65,7 @@ const ContactSection: React.FC = () => {
               </a>
               
               <a 
-                href="https://www.unavarra.es" 
+                href="https://observatorio-investigacion.unavarra.es/investigadores/1173050/detalle" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center p-4 border border-gray-200 rounded-md hover:bg-gray-100 transition-colors"
