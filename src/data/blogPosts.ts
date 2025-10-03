@@ -9,7 +9,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
-  {
+  /*{
     id: 1,
     title: 'Recent Advancements in VTOL Drone Technology',
     slug: 'vtol-drone-technology',
@@ -199,5 +199,5 @@ Despite advances in computational methods, practical testing remains crucial. Ou
 
 By combining advanced computational methods with rigorous testing, UAV designers can overcome the unique aerodynamic challenges presented by these systems, leading to more efficient and capable unmanned aircraft.
     `
-  }
+  }*/
 ];
