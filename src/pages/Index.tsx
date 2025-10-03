@@ -20,8 +20,8 @@ const Index: React.FC = () => {
               <h2 className="font-playfair text-3xl md:text-4xl font-medium mb-6 text-center">About Me</h2>
               <div className="prose mx-auto">
                 <p className="text-lg leading-relaxed mb-4">
-                  Daniel Aláez Gómez is a Spanish aerospace engineer and researcher specialising in unmanned aerial vehicles (UAVs), 
-                  particularly vertical take-off and landing (VTOL) drones. He earned his Bachelor's degree in Aerospace Engineering 
+                  Daniel Aláez Gómez is a Spanish aerospace engineer and researcher specialising in unmanned aerial vehicles (UAVs), unmanned systems and 
+                  distributed systems. He earned his Bachelor's degree in Aerospace Engineering 
                   in 2020 and a Master's in Aeronautical Engineering in 2022 from the University of León.
                 </p>
                 <p className="text-lg leading-relaxed mb-4">
@@ -29,8 +29,8 @@ const Index: React.FC = () => {
                   focusing on the development of digital twins for VTOL UAVs.
                 </p>
                 <p className="text-lg leading-relaxed">
-                  Currently, Aláez Gómez serves as a substitute lecturer in the Department of Statistics, Computer Science, and Mathematics at UPNA. 
-                  His work encompasses drone technology, simulation, and aerodynamics, and he contributes to teaching in various academic programmes.
+                  Currently, Aláez Gómez serves as an assistant lecturer and researcher in the Department of Statistics, Computer Science, and Mathematics at UPNA. 
+                  His work encompasses drone technology, simulation, software engineering, and aerodynamics, and he contributes to teaching in various academic programmes.
                 </p>
               </div>
             </div>
