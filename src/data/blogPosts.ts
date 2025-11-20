@@ -9,102 +9,50 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
-  /*{
+  {
     id: 1,
-    title: 'Recent Advancements in VTOL Drone Technology',
-    slug: 'vtol-drone-technology',
-    excerpt: 'An overview of the latest innovations in vertical take-off and landing drone technologies and their applications.',
-    date: 'April 28, 2024',
-    content: `
-# Recent Advancements in VTOL Drone Technology
+    title: 'I\'m joining a $15,000 vibe coding hackathon to teach Software Engineering students',
+    slug: 'vibe-coding-hackathon-soft-eng',
+    excerpt: 'I\'m testing vibe coding as a solution to teaching Software Engineering at university by joining a hackathon.',
+    date: 'November 20, 2025',
+    content: `# I'm joining a $15,000 vibe coding hackathon to teach Software Engineering students
 
-Vertical Take-Off and Landing (VTOL) drone technology has seen significant advancements in recent years, revolutionizing various industries from aerial photography to delivery services. This blog post explores the latest innovations in VTOL technology and their applications.
+Software Engineering is a fundamental specialization in Computer Science programs. As instructors, one of the greatest challenges we face when teaching this subject is how to decouple the teaching of this discipline from programming. This course is typically taught in the early years, when students still don't understand the real role of a computer scientist beyond writing code. 
 
-## Enhanced Flight Duration
+## The Problem
 
-One of the most significant challenges in drone technology has been extending flight time. Recent advancements in battery technology and power management systems have increased flight durations by up to 40% compared to previous generations. New lightweight materials and more efficient propulsion systems have also contributed to this improvement.
+A civil engineer doesn't just calculate structures. A mechanical engineer has responsibilities beyond drawing components. Similarly, the software engineer must be capable of using a systematic, disciplined, and quantifiable approach to the development, operation, and maintenance of software. In essence, applying solid engineering principles to produce reliable, efficient, and maintainable software, as well as estimating the costs of its development. Conveying this idea is very complex.
 
-![Advanced VTOL drone in flight](https://images.unsplash.com/photo-1487887235947-a955ef187fcc)
+Some of the fundamental content we try to teach includes:
 
-## Improved Stability in Transition
+1. Requirements (functional and non-functional), requirements analysis, and expression through user stories.
+2. Functional analysis through: data flow diagrams, activity diagrams, entity-relationship diagrams, state transition diagrams, use cases, and prototypes.
+3. Design and architecture. Structured design and design principles, UML diagrams, test-driven development. Interfaces and user experience. Integration architectures, components, development, and patterns.
+4. Clean code, code reviews, debugging, analyzers, and testing. Verification and validation.
+5. Deployment and DevOps.
+6. Management, economics, and costs.
+7. Development methodologies (SCRUM, RUP, etc.).
 
-The transition phase between vertical and horizontal flight has traditionally been a vulnerable point for VTOL drones. New control algorithms leveraging machine learning have made this transition smoother and more reliable, even in challenging weather conditions.
+Although the curriculum is relatively extensive, we really only provide introductory glimpses of what students will study in depth in future courses.
 
-Here's a simplified example of a stabilization algorithm used in modern VTOL drones:
+To be able to address the different topics of the course through practical examples, a significant portion of lab time is "lost" teaching a programming language like Java. Unfortunately, many students get lost in this learning process, shifting their focus back toward programming rather than software engineering itself. How can we abstract software engineering from coding while still teaching concepts like deployment and clean code?
 
-\`\`\`python
-def stabilize_transition(pitch, roll, velocity, altitude):
-    # Calculate optimal transition parameters based on current state
-    transition_angle = calculate_optimal_angle(velocity, altitude)
-    
-    # Apply PID controller for smooth transition
-    pitch_correction = PID_controller(
-        target=transition_angle,
-        current=pitch,
-        kp=0.8,    # Proportional gain
-        ki=0.15,   # Integral gain
-        kd=0.25    # Derivative gain
-    )
-    
-    # Return corrected control signals
-    return {
-        'pitch_adjustment': pitch_correction,
-        'thrust_level': calculate_thrust(velocity, transition_angle)
-    }
-\`\`\`
+## The Proposal
 
-## Applications Across Industries
+The answer may lie in the recent phenomenon of vibe coding. As dangerous as the idea may seem to us that future computer scientists relegate all development to AI-based agents, the reality is that many of the companies we collaborate with already employ this practice. Rather than opposing the future that's coming, now more than ever we must train future computer scientists to apply software engineering processes rigorously and reliably. 
 
-VTOL drones are finding applications in diverse fields:
+The thing is, prompting like "I want an app that checks the weather and tells me the best hours for surfing" isn't enough. Which actors will interact with your software? What requirements have you identified in the project? How will development phases and cycles be organized? Is the code maintainable? Answering all these questions (and many, many more) requires a systematic process; it can't be solved with a single prompt.
 
-- **Precision Agriculture**: Monitoring crops, applying targeted treatments, and collecting data for yield optimization.
-- **Infrastructure Inspection**: Examining bridges, power lines, and buildings without putting humans at risk.
-- **Emergency Response**: Delivering medical supplies and providing situational awareness during disasters.
-- **Urban Air Mobility**: Development of larger VTOL vehicles aims to revolutionize urban transportation.
+Taking advantage of the hackathon organized by [Bolt.new](https://bolt.new/) and [Half Baked](https://www.gethalfbaked.com/), I've decided to conduct an experiment. An experiment in which I'm going to apply software engineering processes to develop a real project through vibe coding. The goal: to build a complete, functional application as a traditional development team would, without writing code.
 
-![Drone technologies in action](https://images.unsplash.com/photo-1581091226825-a6a2a5aee158)
+## What If It Works?
 
-## Digital Twin Integration
+If everything goes well, the benefits will be twofold: on one hand, analyzing the limitations of vibe coding and how to tackle a real project by applying software engineering processes; on the other hand, providing my students with a tool on steroids with which to experience software engineering firsthand without having to master a programming language (yet). 
 
-Modern VTOL drones increasingly utilize digital twin technology for development and operations. This approach creates a virtual replica of the physical drone, allowing for advanced simulation and predictive maintenance.
+And of course, doing all of this openly so you can replicate (or copy) it as you please—#build-in-public. That way, if nothing works, I'll also be able to conduct an analysis of the mistakes made so no one else has to repeat them.
 
-\`\`\`javascript
-// Sample code for digital twin synchronization
-class DroneDigitalTwin {
-  constructor(droneId, specifications) {
-    this.droneId = droneId;
-    this.specs = specifications;
-    this.telemetryData = [];
-    this.predictionModel = new MachineLearningModel();
-  }
-  
-  updateWithLiveData(telemetry) {
-    // Update digital twin with real-time telemetry
-    this.telemetryData.push({
-      timestamp: Date.now(),
-      batteryLevel: telemetry.battery,
-      position: telemetry.gpsCoordinates,
-      motorStatus: telemetry.motorReadings
-    });
-    
-    // Run predictive maintenance algorithms
-    const maintenanceNeeded = this.predictionModel.predict(this.telemetryData);
-    
-    return {
-      twinUpdated: true,
-      maintenanceRecommendations: maintenanceNeeded
-    };
-  }
-}
-\`\`\`
-
-## Future Directions
-
-Research continues to push the boundaries of what VTOL drones can achieve. Integration with artificial intelligence, improved autonomous capabilities, and further enhancements in energy efficiency are all active areas of development.
-
-As we continue to innovate in this field, the potential applications of VTOL technology will only expand, creating new opportunities across industries and disciplines.
-    `
-  },
+Oh, I almost forgot! What's my proposal about? Well, as an aviation and simulation enthusiast, I want to develop a cloud platform to orchestrate aerodynamic simulations of airfoils using potential flow methods without requiring advanced knowledge. In the next article, I'll talk more about this idea.`
+  }/*,
   {
     id: 2,
     title: 'Digital Twins in Aerospace Engineering: A Case Study',
