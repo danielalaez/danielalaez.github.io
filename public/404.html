@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Redirecting…</title>
+  </head>
+  <body>
+    <p>Redirecting to the application…</p>
+    <script>
+      // Load the app's index.html and let the client-side router handle the path.
+      // This file is used by GitHub Pages when a direct route returns 404.
+      fetch('./index.html')
+        .then(function(response) { return response.text(); })
+        .then(function(html) {
+          document.open();
+          document.write(html);
+          document.close();
+          // Ensure the current URL stays in the address bar so React Router can read it
+          try {
+            window.history.replaceState({}, '', window.location.pathname + window.location.search);
+          } catch (e) {
+            // ignore
+          }
+        })
+        .catch(function() {
+          // Fallback: provide a link to the homepage
+          document.body.innerHTML = '<p>Could not load the application. <a href="/">Go to homepage</a></p>';
+        });
+    </script>
+  </body>
+</html>

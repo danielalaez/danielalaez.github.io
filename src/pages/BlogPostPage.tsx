@@ -44,6 +44,12 @@ const BlogPostPage: React.FC = () => {
     // Handle italic text (*text*)
     formattedText = formattedText.replace(/\*(.*?)\*/g, '<em>$1</em>');
     
+    // Handle markdown links: [text](https://...)
+    formattedText = formattedText.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+
+    // Auto-link bare URLs (https://...)
+    formattedText = formattedText.replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+    
     return formattedText;
   };
 
