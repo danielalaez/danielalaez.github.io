@@ -43,7 +43,7 @@ The answer may lie in the recent phenomenon of vibe coding. As dangerous as the 
 
 The thing is, prompting like "I want an app that checks the weather and tells me the best hours for surfing" isn't enough. Which actors will interact with your software? What requirements have you identified in the project? How will development phases and cycles be organized? Is the code maintainable? Answering all these questions (and many, many more) requires a systematic process; it can't be solved with a single prompt.
 
-Taking advantage of the hackathon organized by [Bolt.new](https://bolt.new/) and [Half Baked](https://www.gethalfbaked.com/), I've decided to conduct an experiment. An experiment in which I'm going to apply software engineering processes to develop a real project through vibe coding. The goal: to build a complete, functional application as a traditional development team would, without writing code.
+Taking advantage of the hackathon organized by https://bolt.new/ and https://www.gethalfbaked.com/, I've decided to conduct an experiment. An experiment in which I'm going to apply software engineering processes to develop a real project through vibe coding. The goal: to build a complete, functional application as a traditional development team would, without writing code.
 
 ## What If It Works?
 
