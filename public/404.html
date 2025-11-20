@@ -8,25 +8,45 @@
   <body>
     <p>Redirecting to the application…</p>
     <script>
-      // Load the app's index.html and let the client-side router handle the path.
-      // This file is used by GitHub Pages when a direct route returns 404.
-      fetch('./index.html')
-        .then(function(response) { return response.text(); })
-        .then(function(html) {
-          document.open();
-          document.write(html);
-          document.close();
-          // Ensure the current URL stays in the address bar so React Router can read it
-          try {
-            window.history.replaceState({}, '', window.location.pathname + window.location.search);
-          } catch (e) {
-            // ignore
+      // Try to load the site's root index.html so the SPA router can take over.
+      // Use an absolute URL to the origin to avoid fetching a non-existing
+      // relative index (e.g. /blog/index.html) which causes the script to fail.
+      (function() {
+        var rootIndex = window.location.origin + '/index.html';
+        var didFinish = false;
+
+        // Show fallback after a short timeout if nothing happens
+        var fallbackTimer = setTimeout(function() {
+          if (!didFinish) {
+            document.body.innerHTML = '<p>Could not load the application. <a href="/">Go to homepage</a></p>';
           }
-        })
-        .catch(function() {
-          // Fallback: provide a link to the homepage
-          document.body.innerHTML = '<p>Could not load the application. <a href="/">Go to homepage</a></p>';
-        });
+        }, 5000);
+
+        fetch(rootIndex)
+          .then(function(response) {
+            if (!response.ok) throw new Error('index fetch failed');
+            return response.text();
+          })
+          .then(function(html) {
+            didFinish = true;
+            clearTimeout(fallbackTimer);
+            document.open();
+            document.write(html);
+            document.close();
+            try {
+              // Keep the current URL in the address bar so React Router can read it
+              window.history.replaceState({}, '', window.location.pathname + window.location.search);
+            } catch (e) {
+              // ignore
+            }
+          })
+          .catch(function() {
+            // Final fallback: show a link to the homepage
+            didFinish = true;
+            clearTimeout(fallbackTimer);
+            document.body.innerHTML = '<p>Could not load the application. <a href="/">Go to homepage</a></p>';
+          });
+      })();
     </script>
   </body>
 </html>
